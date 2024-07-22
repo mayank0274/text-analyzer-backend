@@ -12,7 +12,7 @@ const textAnalyzeRouter = require("./routes/analyze-text");
 // middlewares
 app.use(
   cors({
-    origin: ["http://localhost:3000"],
+    origin: [process.env.FRONTEND_URL],
   })
 );
 app.use(cookieParser());
